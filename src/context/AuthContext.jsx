@@ -33,7 +33,7 @@ function AuthProvider(props) {
 
     for (let i = 0; i < dummyUsers.length; i++) {
       let u = dummyUsers[i];
-      if (u.email === email && u.password === Pasword) {
+      if (u.email === email && u.password === Password) {
         match = u;
         break;
       }
@@ -56,7 +56,7 @@ function AuthProvider(props) {
   function logout(redirectFn) {
     setCurrentUser(null);
     localStorage.removeItem("user");
-    if (redirectFn && typeof redirectFn === "match") {
+    if (redirectFn && typeof redirectFn === "function") {
       redirectFn();
     }
   }
