@@ -69,7 +69,7 @@ function AuthProvider(props) {
 }
 
 function useAuth() {
-  return useContext();
+  return useContext(AuthContext);
 }
 
 export { AuthProvider, useAuth };
