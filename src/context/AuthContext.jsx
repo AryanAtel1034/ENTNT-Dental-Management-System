@@ -33,7 +33,7 @@ function AuthProvider(props) {
 
     for (let i = 0; i < dummyUsers.length; i++) {
       let u = dummyUsers[i];
-      if (u.email === email && u.password === Password) {
+      if (u.email === email && u.password === password) {
         match = u;
         break;
       }
