@@ -65,7 +65,7 @@ const LandingPage = () => {
         </div>
         <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
           <p className="text-sm text-gray-500">Top Patient</p>
-          <h2 className="text-2xl font-bold mt-1">{topPatients || "-"}</h2>
+          <h2 className="text-2xl font-bold mt-1">{topPatients[0]?.name || "-"}</h2>
         </div>
       </section>
     </div>
