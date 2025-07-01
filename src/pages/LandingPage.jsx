@@ -41,6 +41,15 @@ const LandingPage = () => {
           Login
         </button>
       </nav>
+      <header className="text-center px-4 py-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-300 leading-snug mb-4">
+          High Quality <span className="text-blue-600">and Painless</span> Dentistry
+        </h2>
+        <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+          If you are in need of high-quality, professional and friendly dental care,
+          look no further than our clinic.
+        </p>
+      </header>
     </div>
   );
 };
