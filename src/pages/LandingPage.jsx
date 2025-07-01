@@ -9,8 +9,8 @@ const LandingPage = () => {
   const patients = getPatients();
 
   const revenue = incidents.reduce((sum, i) => sum + (Number(i.cost) || 0), 0);
-  const completed = incidents.filter(i => i.status=== "completed").length;
-  const pending = incidents.filter(i => !i.status || i.status== "completed").length;
+  const completed = incidents.filter(i => i.status?.toLowerCase() === "completed").length;
+  const pending = incidents.filter(i => !i.status || i.status.toLowerCase() !== "completed").length;
   const upcoming = incidents
     .filter(i => i.appointmentDate)
     .sort((a, b) => new Date(a.appointmentDate) - new Date(b.appointmentDate))
@@ -18,7 +18,7 @@ const LandingPage = () => {
   const topPatients = patients.map(p => ({
     ...p,
     count: incidents.filter(i => i.patientId === p.id).length,
-  })).sort((a, b) => b.count - a.count).slice(0, 4);
+  })).sort((a, b) => b.count - a.count).slice(0, 3);
 
   return (
     <div className="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen text-gray-800 flex flex-col justify-between">
@@ -41,9 +41,6 @@ const LandingPage = () => {
           Login
         </button>
       </nav>
-
-      
-     
     </div>
   );
 };
