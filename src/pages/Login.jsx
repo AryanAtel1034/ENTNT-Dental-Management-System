@@ -35,7 +35,7 @@ const Login = () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}
             className="w-full border rounded px-3 py-2 mt-1" required />
         </div>
-        <button type="submit" className="bg-blue-500 text-blue w-full py-2 rounded hover:bg-blue-600">
+        <button type="submit" className="bg-blue-500 text-white w-full py-2 rounded hover:bg-blue-600">
           Sign In
         </button>
       </form>
