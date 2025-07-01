@@ -27,8 +27,8 @@ const LandingPage = () => {
       <nav className="flex flex-wrap justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-10">
         <div className="text-2xl font-bold text-blue-700">Dentel ENTNT</div>
         <div className="hidden md:flex flex-wrap gap-4 text-sm font-medium text-gray-600">
-          <a href="#" className="hover:text-blue-800 transition">Pages</a>
-          <a href="#" className="hover:text-blue-800 transition">About Center</a>
+          <a href="#" className="hover:text-blue-600 transition">Pages</a>
+          <a href="#" className="hover:text-blue-600 transition">About Center</a>
           <a href="#" className="hover:text-blue-600 transition">Treatments</a>
           <a href="#" className="hover:text-blue-600 transition">Fees</a>
           <a href="#" className="hover:text-blue-600 transition">Medical Team</a>
@@ -42,10 +42,10 @@ const LandingPage = () => {
         </button>
       </nav>
       <header className="text-center px-4 py-12">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-300 leading-snug mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug mb-4">
           High Quality <span className="text-blue-600">and Painless</span> Dentistry
         </h2>
-        <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
           If you are in need of high-quality, professional and friendly dental care,
           look no further than our clinic.
         </p>
