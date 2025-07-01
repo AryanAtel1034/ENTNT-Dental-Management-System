@@ -68,7 +68,7 @@ const LandingPage = () => {
           <h2 className="text-2xl font-bold mt-1">{topPatients[0]?.name || "-"}</h2>
         </div>
       </section>
-      <footer className="bg-white text-center py-4 ">
+      <footer className="bg-white text-center py-4 shadow-inner text-sm text-gray-500">
         &copy; {new Date().getFullYear()} Dentel ENTNT. All rights reserved.
       </footer>
     </div>
