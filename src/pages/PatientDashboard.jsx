@@ -14,11 +14,11 @@ const PatientDashboard = () => {
   useEffect(() => {
     if (!user || user.role !== "Patient") return;
     const pats = getPatients();
-    const profile = pats.find((p) => p.id === user.profile);
+    const profile = pats.find((p) => p.id === user.patientId);
     setMyProfile(profile);
 
     const myIncidents = getIncidents().filter(
-      (i) => i.patientId === user.profile
+      (i) => i.patientId === user.patientId
     );
     setMyAppointments(myIncidents);
   }, [user]);
