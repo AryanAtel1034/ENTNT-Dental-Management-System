@@ -50,6 +50,24 @@ const LandingPage = () => {
           look no further than our clinic.
         </p>
       </header>
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 pb-16 max-w-6xl mx-auto text-center">
+        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <p className="text-sm text-gray-900">Total Revenue</p>
+          <h2 className="text-2l font-bold mt-1">₹{revenue}</h2>
+        </div>
+        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <p className="text-sm text-gray-900">Completed Treatments</p>
+          <h2 className="text-2l font-bold mt-1">{completed}</h2>
+        </div>
+        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <p className="text-sm text-gray-900">Pending Treatments</p>
+          <h2 className="text-2sm font-bold mt-1">{pending}</h2>
+        </div>
+        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <p className="text-sm text-gray-900">Top Patient</p>
+          <h2 className="text-2sm font-bold mt-1">{topPatients || "-"}</h2>
+        </div>
+      </section>
     </div>
   );
 };
