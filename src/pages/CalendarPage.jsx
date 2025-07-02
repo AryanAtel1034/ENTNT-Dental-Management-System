@@ -14,12 +14,12 @@ const CalendarPage = () => {
   useEffect(() => {
     const all = getIncidents();
     setIncidents(all);
-    handleDateSelect();
+    handleDateSelect(new Date());
   }, []);
 
   const handleDateSelect = (selectedDate) => {
     const day = toLocalDate(selectedDate);
-    const filtered = incidents.filter(() => {
+    const filtered = incidents.filter((i) => {
       const appt = i.appointmentDate ? toLocalDate(i.appointmentDate) : "";
       const next = i.nextDate ? toLocalDate(i.nextDate) : "";
       return appt === day || next === day;
@@ -34,7 +34,7 @@ const CalendarPage = () => {
     const dateStr = toLocalDate(date);
     const marked = incidents.some((i) => {
       const appt = i.appointmentDate ? toLocalDate(i.appointmentDate) : "";
-      const next = i.nextDate ? toLocalDate(i.next) : "";
+      const next = i.nextDate ? toLocalDate(i.nextDate) : "";
       return appt === dateStr || next === dateStr;
     });
     return marked ? <div className="appointment-dot" /> : null;
