@@ -1,6 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
+import Login from "../pages/Login";
+import AdminDashboard from "../pages/AdminDashboard";
+import PatientDashboard from "../pages/PatientDashboard";
+import LandingPage from "../pages/LandingPage";
+import CalendarPage from "../pages/CalendarPage";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 function AppRoutes() {
