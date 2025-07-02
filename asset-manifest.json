@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ENTNT-Dental-Management-System/static/css/main.aaf70eea.css",
-    "main.js": "/ENTNT-Dental-Management-System/static/js/main.62baa8c4.js",
+    "main.js": "/ENTNT-Dental-Management-System/static/js/main.2aece292.js",
     "index.html": "/ENTNT-Dental-Management-System/index.html",
     "main.aaf70eea.css.map": "/ENTNT-Dental-Management-System/static/css/main.aaf70eea.css.map",
-    "main.62baa8c4.js.map": "/ENTNT-Dental-Management-System/static/js/main.62baa8c4.js.map"
+    "main.2aece292.js.map": "/ENTNT-Dental-Management-System/static/js/main.2aece292.js.map"
   },
   "entrypoints": [
     "static/css/main.aaf70eea.css",
-    "static/js/main.62baa8c4.js"
+    "static/js/main.2aece292.js"
   ]
 }
