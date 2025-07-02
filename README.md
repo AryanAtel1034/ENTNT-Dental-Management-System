@@ -1,18 +1,20 @@
 # ENTNT Dental Management System
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Getting Started](#getting-started)
-3. [Installation](#installation)
-4. [Running the App](#running-the-app) 
-5. [Contributing](#contributing)
-
 ## Overview
 
 The ENTNT Dental Management System is a React application that simplifies dental laboratory operations by digitizing key processes. Its comprehensive feature set includes appointment scheduling, Patient management, patient record keeping, real-time reporting, and Appointment calender communication tools.
 
-***
+### Features
+-  Landing page with KPIs and navigation
+-  Role-based login system (Admin / Patient)
+-  Admin dashboard with:
+  - KPI cards (revenue, top patients, pending/completed treatments)
+  - Add/edit patients and incidents
+  - Appointment management and calendar
+-  Patient dashboard with:
+  - Profile and personal appointments
+  - File download & preview
+-  Calendar view with appointment markers
 
 ## Technologies
 
@@ -31,7 +33,7 @@ Tailwind CSS is used as the utility-first CSS framework for styling our web appl
 
 We selected MongoDB as our primary database due to its flexibility and scalability. MongoDB's document-oriented structure is well-suited for storing complex and hierarchical data, which aligns perfectly with the diverse and dynamic data we deal with in the Dental Lab Management app. This enables us to iterate quickly, manage data efficiently, and scale as needed.
 
-***
+
 
 ## Getting Started
 
@@ -89,6 +91,17 @@ or
 npm run dev
 ```
 
+### User Roles & Credentials
+ ```
+Admin
+Email: admin@entnt.in
+Password: admin123
+```
+```
+Patient
+Email: john@entnt.in
+Password: patient123
+```
 
 
 
