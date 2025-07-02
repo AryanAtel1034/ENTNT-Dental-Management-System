@@ -7,7 +7,7 @@ import IncidentList from "./IncidentList";
 const PatientList = () => {
   const [patients, setPatients] = useState([]);
   const [selected, setSelected] = useState(null);
-  const [openIncidentsFor, setOpenIncidentsFor] = useState(null); // tracks opened incident section
+  const [openIncidentsFor, setOpenIncidentsFor] = useState(null); 
 
   useEffect(() => {
     setPatients(getPatients());

@@ -1,24 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/AdminDashboard";
+import PatientDashboard from "./pages/PatientDashboard";
+import CalendarPage from "./pages/CalendarPage";
+import LandingPage from "./pages/LandingPage";
+import ProtectedRoute from "./components/ProtectedRoute";
+import { useAuth } from "./context/AuthContext";
 
 function App() {
+  const { user } = useAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+     
+        <Route path="/" element={<LandingPage />} />
+
+
+        <Route path="/login" element={<Login />} />
+
+        
+        <Route
+          path="/redirect"
+          element={
+            user ? (
+              user.role === "Admin" ? <Navigate to="/admin" /> : <Navigate to="/patient" />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute role="Admin">
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
+
+     
+        <Route
+          path="/admin/calendar"
+          element={
+            <ProtectedRoute role="Admin">
+              <CalendarPage />
+            </ProtectedRoute>
+          }
+        />
+
+       
+        <Route
+          path="/patient"
+          element={
+            <ProtectedRoute role="Patient">
+              <PatientDashboard />
+            </ProtectedRoute>
+          }
+        />
+
+       
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
   );
 }
 
