@@ -75,7 +75,6 @@ npx tailwindcss init
 npm install react-calendar
 npm install react-calendar --save
 npm install lucide-react
-
 ```
 
 ## Running the webiste
