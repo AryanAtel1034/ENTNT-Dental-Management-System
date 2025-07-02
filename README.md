@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# ENTNT Dental Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+3. [Installation](#installation)
+4. [Running the App](#running-the-app) 
+5. [Contributing](#contributing)
+6. [License](#license)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The ENTNT Dental Management System is a React application that simplifies dental laboratory operations by digitizing key processes. Its comprehensive feature set includes appointment scheduling, Patient management, patient record keeping, real-time reporting, and Appointment calender communication tools.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+***
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+Our application is built upon a carefully selected technology stack designed to enhance the performance, scalability, and maintainability of the software. Below is an outline of the key technologies used and the rationale behind their selection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### [React ](https://react.dev/) 🚀
 
-### `npm run build`
+React serves as the core framework for building our web application. Its component-based architecture enables the creation of reusable, interactive UI elements with efficient state management. Powered by a virtual DOM, React ensures high performance and seamless user experiences. Backed by a strong community and maintained by Meta, it offers a robust ecosystem for developing scalable and maintainable web applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### [TailWind CSS](https://tailwindcss.com/) 🔥
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tailwind CSS is used as the utility-first CSS framework for styling our web application. It allows us to rapidly build modern, responsive UIs directly within our HTML or JSX by using pre-defined utility classes. This approach eliminates the need for writing custom CSS, enhances consistency across the design, and speeds up the development process. Its flexibility and responsiveness make it ideal for creating clean, scalable, and maintainable user interfaces.
 
-### `npm run eject`
+### [React Router](https://reactrouter.com/) 🍃
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We selected MongoDB as our primary database due to its flexibility and scalability. MongoDB's document-oriented structure is well-suited for storing complex and hierarchical data, which aligns perfectly with the diverse and dynamic data we deal with in the Dental Lab Management app. This enables us to iterate quickly, manage data efficiently, and scale as needed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+***
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You need Node.js, npm, and React CLI installed on your system to run this application. If not installed, you can follow the instructions in the respective documentation:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Node.js](https://nodejs.org/en/download/package-manager/)
+- [npm](https://www.npmjs.com/get-npm)
+- [React Native CLI](https://react.dev/)
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To setup the project locally, follow the next steps:
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+git clone https://github.com/AryanAtel1034/ENTNT-Dental-Management-System.git
+```
 
-### Making a Progressive Web App
+2. Navigate into the cloned repository directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+cd entnt-dental-dashboard
+```
 
-### Advanced Configuration
+3. Install the dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm install
+```
 
-### Deployment
+## Running the webiste
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To start the webiste, run:
 
-### `npm run build` fails to minify
+```
+npm start
+```
+or
+```
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## Contributing
+
+We highly appreciate contributions to the ENTNT Dental Management system . If you would like to contribute, kindly fork the repository, make your changes and submit a pull request. Make sure your code adheres to our coding standards and conventions.
+
+More details will be provided here in the future.
+
