@@ -7,7 +7,6 @@
 3. [Installation](#installation)
 4. [Running the App](#running-the-app) 
 5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Overview
 
@@ -66,6 +65,18 @@ cd entnt-dental-dashboard
 
 ```
 npm install
+```
+
+Additional Commands 
+```
+npm install react-router-dom
+npm install -D tailwindcss@3
+npx tailwindcss init
+npm install react-calendar
+npm install react-calendar --save
+npm install lucide-react
+
+
 ```
 
 ## Running the webiste
