@@ -16,6 +16,15 @@ The ENTNT Dental Management System is a React application that simplifies dental
   - File download & preview
 -  Calendar view with appointment markers
 
+### System Overview
+```
+Frontend: React 18 with Context API
+├── Authentication Layer (AuthContext)
+├── Data Management Layer (DataContext)
+├── Patient Profile Layer (PatientProfileContext)
+└── UI Components (Admin/Patient Dashboards)
+```
+
 ## Technologies
 
 Our application is built upon a carefully selected technology stack designed to enhance the performance, scalability, and maintainability of the software. Below is an outline of the key technologies used and the rationale behind their selection.
